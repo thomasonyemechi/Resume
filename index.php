@@ -8,7 +8,7 @@
             <meta name="viewport" content="width=device-width, initial-scale=1">
             <title>Material Resume</title>
             <link rel="preconnect" href="https://fonts.gstatic.com/"
-                  crossorigin="crossorigin"  hkz.VV>)/5`rpdy />
+                  crossorigin="crossorigin" />
             <link rel="preload" as="style"
                   href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&amp;family=Roboto:wght@300;400;500;700&amp;display=swap"
                   />
@@ -37,7 +37,7 @@
                   <div class="container text-center text-lg-left">
                         <div class="pt-4 clearfix">
                               <h1 class="site-title mb-0"><?= PROJECT_NAME; ?></h1>
-                              <div class="site-nav">
+                              <div class="site-nav"> <?php if(isset($report)) { echo Alert(); } ?>
                                     <nav role="navigation">
                                           <ul class="nav justify-content-center">
                                                 <li class="nav-item"><a class="nav-link" href="#about" title="About"><span
@@ -77,8 +77,8 @@
                                                 <div class="mask" style="background-color: rgba(0, 0, 0,
                                                       0.7);backdrop-filter: blur(2px);">
                                                       <div class="text-center p-5">
-                                                            <div class="avatar p-1"><img class="img-thumbnail shadow-2-strong"
-                                                                        src="images/avatar.jpg" width="160" height="160" /></div>
+                                                     <!--        <div class="avatar p-1"><img class="img-thumbnail shadow-2-strong"
+                                                                        src="images/avatar.jpg" width="160" height="160" /></div> -->
                                                             <div class="header-bio mt-3">
                                                                   <div data-aos="zoom-in" data-aos-delay="0">
                                                                         <h2 class="h1"><?= PROJECT_NAME; ?></h2>
@@ -89,27 +89,29 @@
                                                                         <nav role="navigation">
                                                                               <ul class="nav justify-content-center">
                                                                                     <li class="nav-item"><a class="nav-link"
-                                                                                                href="https://twitter.com/templateflip" title="Twitter"><i
+                                                                                                href="#" title="Twitter"><i
                                                                                                       class="fab fa-twitter"></i><span class="menu-title sr-only">Twitter</span></a>
                                                                                     </li>
                                                                                     <li class="nav-item"><a class="nav-link"
-                                                                                                href="https://www.facebook.com/templateflip" title="Facebook"><i
+                                                                                                href="https://web.facebook.com/onyemechigideon.thomas/" title="Facebook"><i
                                                                                                       class="fab fa-facebook"></i><span class="menu-title sr-only">Facebook</span></a>
                                                                                     </li>
                                                                                     <li class="nav-item"><a class="nav-link"
-                                                                                                href="https://www.instagram.com/templateflip" title="Instagram"><i
+                                                                                                href="https://www.instagram.com/onyemechigideon/" title="Instagram"><i
                                                                                                       class="fab fa-instagram"></i><span class="menu-title sr-only">Instagram</span></a>
                                                                                     </li>
                                                                                     <li class="nav-item"><a class="nav-link"
-                                                                                                href="https://github.com/templateflip" title="Github"><i
+                                                                                                href="https://github.com/thomasonyemechi"><i
                                                                                                       class="fab fa-github"></i><span class="menu-title sr-only">Github</span></a>
                                                                                     </li>
                                                                               </ul>
                                                                         </nav>
                                                                   </div>
-                                                                  <div class="d-print-none"><a class="btn btn-outline-light btn-lg
+                                                                  <div class="d-print-none">
+                                                                 <!--        <a class="btn btn-outline-light btn-lg
                                                                               shadow-sm mt-1 me-3" href="material-resume.pdf"
-                                                                              data-aos="fade-right" data-aos-delay="700">Download CV</a><a
+                                                                              data-aos="fade-right" data-aos-delay="700">Download CV</a> -->
+                                                                              <a
                                                                               class="btn btn-info btn-lg shadow-sm mt-1" href="#contact"
                                                                               data-aos="fade-left" data-aos-delay="700">Hire Me</a></div>
                                                             </div>
@@ -336,9 +338,7 @@
                                                       <div class="m-4 mt-md-2 text-end">
                                                             <p class="text-teal text-small">PHP / Laravel / Blade / HTML / CSS / JavaScript / SQL</p>
                                                             <h3>School Management Software</h3>
-                                                            <p class="text-muted">Web design for popular resturant chain involving
-                                                                  complex layouts done in both Photoshop and Sketch. Collaborated with
-                                                                  back-end and front-end team for finished product.</p>
+                                                            <p class="text-muted">A software buldt for the purpose of managing activities that haooens in the school such as, Fee Accounting, Result management, Elearing....</p>
                                                       </div>
                                                 </div>
                                                 <div class="col-md-6"><a href="https://www.behance.net/"
@@ -352,11 +352,9 @@
                                                 <div class="col-md-6 d-flex align-items-center" data-aos="fade-left"
                                                       data-aos-delay="100">
                                                       <div class="m-4 mt-md-2">
-                                                            <p class="text-teal text-small">Frontend / HTML / CSS / JavaScript</p>
-                                                            <h3>E-Commerce Website</h3>
-                                                            <p class="text-muted">Built highly performant website for an
-                                                                  E-commerce Portal. Worked with back-end team to timely deliver
-                                                                  codebase in HTML, CSS and modern JavaScript.</p>
+                                                            <p class="text-teal text-small">PHP / Laravel / Blade / HTML / CSS / JavaScript / SQL</p>
+                                                            <h3>Online CBT Tester</h3>
+                                                            <p class="text-muted">A web application that helps student prepare for diffrent exams by practing reliable past questions.</p>
                                                       </div>
                                                 </div>
                                           </div>
@@ -371,15 +369,13 @@
                                                             <div class="avatar"><img src="images/reference-image-1.jpg" width="60"
                                                                         height="60" /></div>
                                                             <div class="header-bio m-3 mb-0">
-                                                                  <h3 class="h6 mb-1" data-aos="fade-left" data-aos-delay="0">Aiyana</h3>
+                                                                  <h3 class="h6 mb-1" data-aos="fade-left" data-aos-delay="0">Ogabji Godwin</h3>
                                                                   <p class="text-muted text-small" data-aos="fade-left"
-                                                                        data-aos-delay="100">CEO / Web Design Company</p>
+                                                                        data-aos-delay="100">CEO / Livepetal Systems</p>
                                                             </div>
                                                       </div>
                                                       <div class="d-flex"><i class="text-secondary fas fa-quote-left"></i>
-                                                            <p class="lead mx-2" data-aos="fade-left" data-aos-delay="100">Walter
-                                                                  displays exemplary professionalism and is able to take on challenges.
-                                                                  He learns quickly and is an asset to any team.</p>
+                                                            <p class="lead mx-2" data-aos="fade-left" data-aos-delay="100">He is fast and reliable.</p>
                                                       </div>
                                                 </div>
                                                 <div class="col-md-6">
@@ -387,15 +383,13 @@
                                                             <div class="avatar"><img src="images/reference-image-2.jpg" width="60"
                                                                         height="60" /></div>
                                                             <div class="header-bio m-3 mb-0">
-                                                                  <h3 class="h6 mb-1" data-aos="fade-left" data-aos-delay="0">Alexander</h3>
+                                                                  <h3 class="h6 mb-1" data-aos="fade-left" data-aos-delay="0">Olaniran Omotola</h3>
                                                                   <p class="text-muted text-small" data-aos="fade-left"
-                                                                        data-aos-delay="100">Front-end Developer / Web Design Company</p>
+                                                                        data-aos-delay="100">Project Manager</p>
                                                             </div>
                                                       </div>
                                                       <div class="d-flex"><i class="text-secondary fas fa-quote-left"></i>
-                                                            <p class="lead mx-2" data-aos="fade-left" data-aos-delay="100">Walter
-                                                                  is a great co-worker and problem solver. He is quick to extend his
-                                                                  helping hand and makes a good team player.</p>
+                                                            <p class="lead mx-2" data-aos="fade-left" data-aos-delay="100">Creative and deligient.</p>
                                                       </div>
                                                 </div>
                                           </div>
@@ -405,40 +399,39 @@
                                     <div class="contant-section">
                                           <h2 class="h2 fw-light text mb-4">Contact</h2>
                                           <div class="row mb-4">
-                                                <div class="col-md-5" data-aos="fade-left" data-aos-delay="200">
+                                                <div class="col-md-12" data-aos="fade-left" data-aos-delay="200">
                                                       <div class="mt-1">
                                                             <div class="h6"><i class="fas fa-phone pe-2 text-muted"
-                                                                        style="width:24px;opacity:0.85;"></i> +0718-111-0011</div>
+                                                                        style="width:24px;opacity:0.85;"></i> +2349038772366</div>
                                                             <div class="h6"><i class="far fa-envelope pe-2 text-muted"
                                                                         style="width:24px;opacity:0.85;"></i> <a
                                                                         href="https://demo.templateflip.com/cdn-cgi/l/email-protection"
                                                                         class="__cf_email__"
-                                                                        data-cfemail="5324323f27362113303c3e23323d2a7d303c3e">[email&#160;protected]</a></div>
+                                                                        data-cfemail="5324323f27362113303c3e23323d2a7d303c3e"><?= PROJECT_EMAIL ?></a></div>
                                                       </div>
-                                                      <div class="mt-5 d-print-none"><form
-                                                                  action="https://formspree.io/your@email.com" method="POST">
+                                                      <div class="mt-5 d-print-none"><form  method="POST">
                                                                   <div class="form-outline mb-4">
-                                                                        <input type="text" id="name" class="form-control" required />
+                                                                        <input type="text" name="name" class="form-control" required />
                                                                         <label class="form-label" for="name">Name</label>
                                                                   </div>
                                                                   <div class="form-outline mb-4">
-                                                                        <input type="email" id="email" class="form-control" required />
+                                                                        <input type="email" name="email" class="form-control" required />
                                                                         <label class="form-label" for="email">Email address</label>
                                                                   </div>
                                                                   <div class="form-outline mb-4">
-                                                                        <textarea class="form-control" style="resize: none;" id="message"
+                                                                        <textarea class="form-control" style="resize: none;" name="message"
                                                                               rows="4" required></textarea>
                                                                         <label class="form-label" for="message">Message</label>
                                                                   </div>
-                                                                  <button class="btn btn-info btn-block mb-4" type="submit">Send</button>
+                                                                  <button class="btn btn-info btn-block mb-4" name="sendMail" type="submit">Send</button>
                                                             </form>
                                                       </div>
                                                 </div>
-                                                <div class="col-md-7 d-print-none" data-aos="zoom-in"
+                                          <!--       <div class="col-md-7 d-print-none" data-aos="zoom-in"
                                                       data-aos-delay="100"><iframe
                                                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d496.9774799129763!2d-73.98032087190995!3d40.765927126473905!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c258f9cfcb250d%3A0xdb570ddcb766e3a8!2sNew%20York%20City%20Center!5e0!3m2!1sen!2sin!4v1614183731149!5m2!1sen!2sin"
                                                             width="500" height="400" style="border:0;width:100%;"
-                                                            allowfullscreen="" loading="lazy"></iframe></div>
+                                                            allowfullscreen="" loading="lazy"></iframe></div> -->
                                           </div>
                                     </div>
                               </div>
@@ -447,24 +440,24 @@
             <footer class="pt-4 pb-4 text-muted text-center d-print-none">
                   <div class="container">
                         <div class="my-3">
-                              <div class="h4">Walter Patterson</div>
+                              <div class="h4"><?= PROJECT_NAME ?>.</div>
                               <div class="footer-nav">
                                     <nav role="navigation">
                                           <ul class="nav justify-content-center">
                                                 <li class="nav-item"><a class="nav-link"
-                                                            href="https://twitter.com/templateflip" title="Twitter"><i class="fab
+                                                            href="#" title="Twitter"><i class="fab
                                                                   fa-twitter"></i><span class="menu-title sr-only">Twitter</span></a>
                                                 </li>
                                                 <li class="nav-item"><a class="nav-link"
-                                                            href="https://www.facebook.com/templateflip" title="Facebook"><i
+                                                            href="https://web.facebook.com/onyemechigideon.thomas/" title="Facebook"><i
                                                                   class="fab fa-facebook"></i><span class="menu-title sr-only">Facebook</span></a>
                                                 </li>
                                                 <li class="nav-item"><a class="nav-link"
-                                                            href="https://www.instagram.com/templateflip" title="Instagram"><i
+                                                            href="https://www.instagram.com/onyemechigideon/" title="Instagram"><i
                                                                   class="fab fa-instagram"></i><span class="menu-title sr-only">Instagram</span></a>
                                                 </li>
                                                 <li class="nav-item"><a class="nav-link"
-                                                            href="https://github.com/templateflip" title="Github"><i class="fab
+                                                            href="https://github.com/thomasonyemechi" title="Github"><i class="fab
                                                                   fa-github"></i><span class="menu-title sr-only">Github</span></a>
                                                 </li>
                                           </ul>
@@ -472,8 +465,7 @@
                               </div>
                         </div>
                         <div class="text-small">
-                              <div class="mb-1">&copy; Material Resume. All rights reserved.</div>
-                              <div>Design - <a href="https://templateflip.com/" target="_blank">TemplateFlip</a></div>
+                              <div class="mb-1">&copy; <?= PROJECT_NAME ?> All rights reserved.</div>
                         </div>
                   </div>
             </footer>
@@ -485,7 +477,7 @@
             <script defer src="../../static.cloudflareinsights.com/beacon.min.js"
                   data-cf-beacon='{" rayId" :" 6802a063baf05d03" ," version" :" 2021.8.0" ," r"
                   :1," token" :" 9b7e49e3e22049349b96a4d30f3c83ad" ," si" :10}'></script>
+        
       </body>
 
-      <!-- Mirrored from demo.templateflip.com/material-resume/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 17 Aug 2021 11:43:27 GMT -->
 </html>
