@@ -6,7 +6,7 @@
             <meta charset="UTF-8">
             <meta http-equiv="X-UA-Compatible" content="IE=edge">
             <meta name="viewport" content="width=device-width, initial-scale=1">
-            <title>Material Resume</title>
+            <title>Thomas Onyemechi</title>
             <link rel="preconnect" href="https://fonts.gstatic.com/"
                   crossorigin="crossorigin" />
             <link rel="preload" as="style"
@@ -319,7 +319,7 @@
                               <div class="shadow-1-strong bg-white my-5 p-5 d-print-none" id="portfolio">
                                     <div class="portfolio-section">
                                           <h2 class="h2 fw-light mb-4">Portfolio</h2>
-                                          <div class="row g-0">
+                                         <!--  <div class="row g-0">
                                                 <div class="col-md-6"><a href="https://dribbble.com/" target="_blank"><img
                                                                   class="img-fluid" src="images/music.png" width="800" height="500"
                                                                   /></a></div>
@@ -357,7 +357,7 @@
                                                             <p class="text-muted">A web application that helps student prepare for diffrent exams by practing reliable past questions.</p>
                                                       </div>
                                                 </div>
-                                          </div>
+                                          </div> -->
                                     </div>
                               </div>
                               <div class="shadow-1-strong bg-white my-5 p-5" id="references">
